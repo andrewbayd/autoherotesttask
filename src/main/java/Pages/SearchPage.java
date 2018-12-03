@@ -5,7 +5,7 @@ import org.openqa.selenium.support.FindBy;
 
 import java.util.List;
 
-public class SearchPage {
+public class SearchPage extends BasePage {
     private static final String FILTER_YEAR_XPATH = "//div[@data-qa-selector='filter-year']";
     private static final String YEAR_RANGE_DROPDOWN_XPATH = "//select[@name='yearRange.min']";
     private static final String YEAR_RANGE_OPTIONS_XPATH = "//select[@name='yearRange.min']/option";
@@ -18,5 +18,12 @@ public class SearchPage {
 
     @FindBy(xpath = YEAR_RANGE_OPTIONS_XPATH)
     private List<WebElement> yearRangeOptions;
-    
+
+    public void filterForFirstRegistrationFrom(String year) {
+        waitForElementAndClick(filterYear);
+        waitForElementAndClick(yearRangeDropdown);
+        selectElementFromDropdownByText(yearRangeOptions, year);
+
+    }
+
 }

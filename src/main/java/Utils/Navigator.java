@@ -1,11 +1,12 @@
 package Utils;
 
+import static Utils.Constants.HOMEPAGE_URL;
 import static Utils.DriverWrapper.driver;
 
 public class Navigator {
-    private static final String HOMEPAGE_URL = "https://www.autohero.com/de/";
 
-    public void openHomePage() {
+
+    public void openApp() {
         driver.get(HOMEPAGE_URL);
         System.out.println("Home page was opened");
     }

@@ -4,7 +4,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 public class DriverWrapper {
-    private static final String CHROME_DRIVER_PATH = "comautoherotesttask/src/main/resources/chromedriver";
+    private static final String CHROME_DRIVER_PATH = "/Users/andriimac/Documents/QAAutomationCourse/comautoherotesttask/src/main/resources/chromedriver";
 
     private static WebDriver getDriver() {
         System.setProperty("webdriver.chrome.driver", CHROME_DRIVER_PATH);
