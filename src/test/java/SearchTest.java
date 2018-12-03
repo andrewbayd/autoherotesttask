@@ -1,13 +1,12 @@
 import Pages.HomePage;
 import Pages.SearchPage;
 import Utils.Navigator;
-import org.assertj.core.api.Assertions;
-import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 import static Utils.Constants.YEAR;
+import static org.testng.Assert.assertTrue;
 
 public class SearchTest {
     private Navigator navigator = new Navigator();
@@ -20,12 +19,12 @@ public class SearchTest {
     }
 
     @Test
-    public void searchTest() throws InterruptedException {
+    public void searchTest() {
         homePage.openSearchPage();
         searchPage.filterForFirstRegistrationFrom(YEAR);
         searchPage.sortResultsByPriceDescending();
-        Assertions.assertThat(searchPage.getAllPrices()).isEqualTo(searchPage.getAllPricesSorted());
-        Assert.assertTrue(searchPage.isAllCarsOnPageRegisteredFrom(YEAR));
+        assertTrue(searchPage.isPricesSortedByDesc());
+        assertTrue(searchPage.isAllCarsOnPageRegisteredFrom(YEAR));
     }
 
     @AfterClass

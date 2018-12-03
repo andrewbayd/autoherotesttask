@@ -1,9 +1,9 @@
-package Pages;
+package Utils;
 
-import Utils.Waiter;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
 
+import java.util.Comparator;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -17,16 +17,12 @@ public class BasePage extends PageFactory {
 
     private Waiter waiter = new Waiter();
 
-    void waitForElement(WebElement element) {
-        waiter.waitForElementIsVisible(element, Waiter.MEDIUM_DELAY);
-    }
-
-    void waitForElementAndClick(WebElement element) {
+    protected void waitForElementAndClick(WebElement element) {
         waiter.waitForElementIsVisible(element, Waiter.MEDIUM_DELAY);
         element.click();
     }
 
-    void selectElementFromDropdownByText(List<WebElement> elements, String text) {
+    protected void selectElementFromDropdownByText(List<WebElement> elements, String text) {
         for (WebElement element: elements) {
             if (element.getText().equals(text)) {
                 element.click();
@@ -35,8 +31,21 @@ public class BasePage extends PageFactory {
         }
     }
 
-    List<Integer> getIntFromElementsText(List<WebElement> elements) {
+    protected List<Integer> getIntFromElementsText(List<WebElement> elements) {
         return elements.stream().map(e -> Integer.parseInt(e.getText().replaceAll("\\D+","")))
                                 .collect(Collectors.toList());
+    }
+
+    protected List<Integer> getIntSortedDescFromElementsText(List<WebElement> elements) {
+        return elements.stream().map(e -> Integer.parseInt(e.getText().replaceAll("\\D+","")))
+                                .sorted(Comparator.reverseOrder()).collect(Collectors.toList());
+    }
+
+    protected void waitForResultsLoaded() {
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
     }
 }

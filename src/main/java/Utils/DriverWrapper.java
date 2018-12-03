@@ -3,7 +3,7 @@ package Utils;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class DriverWrapper {
+class DriverWrapper {
     private static final String CHROME_DRIVER_PATH = "/Users/andriimac/Documents/QAAutomationCourse/comautoherotesttask/src/main/resources/chromedriver";
 
     private static WebDriver getDriver() {
@@ -11,6 +11,6 @@ public class DriverWrapper {
         return new ChromeDriver();
     }
 
-    public static WebDriver driver = getDriver();
+    static WebDriver driver = getDriver();
 
 }

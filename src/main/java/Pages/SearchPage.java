@@ -1,11 +1,10 @@
 package Pages;
 
+import Utils.BasePage;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
-import java.util.Comparator;
 import java.util.List;
-import java.util.stream.Collectors;
 
 public class SearchPage extends BasePage {
     private static final String FILTER_YEAR_XPATH = "//div[@data-qa-selector='filter-year']";
@@ -41,24 +40,16 @@ public class SearchPage extends BasePage {
         waitForElementAndClick(filterYear);
         waitForElementAndClick(yearRangeDropdown);
         selectElementFromDropdownByText(yearRangeOptions, year);
-        System.out.println("Results were filtered for first registration from " + year);
     }
 
     public void sortResultsByPriceDescending() {
         waitForElementAndClick(sortDropdown);
         waitForElementAndClick(sortByPriceDescOption);
-        System.out.println("Results were sorted by price descending");
     }
 
-    public List<Integer> getAllPrices() throws InterruptedException {
-        Thread.sleep(1000);
-        return getIntFromElementsText(allPricesOnPage);
-    }
-
-    public List<Integer> getAllPricesSorted() {
-        return allPricesOnPage.stream()
-                .map(e -> Integer.parseInt(e.getText().replaceAll("\\D+","")))
-                .sorted(Comparator.reverseOrder()).collect(Collectors.toList());
+    public boolean isPricesSortedByDesc() {
+        waitForResultsLoaded();
+        return getIntFromElementsText(allPricesOnPage).equals(getIntSortedDescFromElementsText(allPricesOnPage));
     }
 
     public boolean isAllCarsOnPageRegisteredFrom(String year) {
@@ -66,8 +57,8 @@ public class SearchPage extends BasePage {
         boolean result = true;
         List<Integer> years = getIntFromElementsText(carsRegistrationDates);
 
-        for (int element: years) {
-            if (element < yearInt) {
+        for (int i: years) {
+            if (i < yearInt) {
                 result = false;
                 break;
             }
