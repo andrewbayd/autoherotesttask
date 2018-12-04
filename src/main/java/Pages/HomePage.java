@@ -12,6 +12,5 @@ public class HomePage extends BasePage {
 
     public void openSearchPage() {
         waitForElementAndClick(searchLink);
-        System.out.println("Search page was opened");
     }
 }

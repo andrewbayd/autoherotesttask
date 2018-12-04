@@ -54,17 +54,8 @@ public class SearchPage extends BasePage {
 
     public boolean isAllCarsOnPageRegisteredFrom(String year) {
         int yearInt = Integer.parseInt(year);
-        boolean result = true;
         List<Integer> years = getIntFromElementsText(carsRegistrationDates);
-
-        for (int i: years) {
-            if (i < yearInt) {
-                result = false;
-                break;
-            }
-        }
-
-        return result;
+        return isElementGreaterOrEqualsToEveryElementInList(yearInt, years);
 
     }
 

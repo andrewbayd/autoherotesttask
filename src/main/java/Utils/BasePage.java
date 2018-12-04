@@ -48,4 +48,17 @@ public class BasePage extends PageFactory {
             e.printStackTrace();
         }
     }
+
+    protected boolean isElementGreaterOrEqualsToEveryElementInList(int element, List<Integer> elements) {
+        boolean result = true;
+
+        for (int i: elements) {
+            if (i < element) {
+                result = false;
+                break;
+            }
+        }
+
+        return result;
+    }
 }
