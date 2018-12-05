@@ -15,4 +15,12 @@ class Waiter {
         WebDriverWait wait = new WebDriverWait(driver, delay);
         wait.until(ExpectedConditions.visibilityOf(element));
     }
+
+    void hardWaiter() {
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+    }
 }

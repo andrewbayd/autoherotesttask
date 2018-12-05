@@ -41,12 +41,8 @@ public class BasePage extends PageFactory {
                                 .sorted(Comparator.reverseOrder()).collect(Collectors.toList());
     }
 
-    protected void waitForResultsLoaded() {
-        try {
-            Thread.sleep(1000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
+    protected void waitForLoading() {
+        waiter.hardWaiter();
     }
 
     protected boolean isElementGreaterOrEqualsToEveryElementInList(int element, List<Integer> elements) {

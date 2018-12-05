@@ -48,7 +48,7 @@ public class SearchPage extends BasePage {
     }
 
     public boolean isPricesSortedByDesc() {
-        waitForResultsLoaded();
+        waitForLoading();
         return getIntFromElementsText(allPricesOnPage).equals(getIntSortedDescFromElementsText(allPricesOnPage));
     }
 

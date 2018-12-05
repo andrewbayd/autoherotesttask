@@ -3,11 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="0cc703c5-265e-4b48-a6a4-a7374e07fde2" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Pages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pages/HomePage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Pages/SearchPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pages/SearchPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Utils/BasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utils/BasePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Utils/Navigator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utils/Navigator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Utils/DriverWrapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utils/DriverWrapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Utils/Waiter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utils/Waiter.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -23,7 +22,7 @@
       <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="555">
+            <state relative-caret-position="259">
               <caret line="37" selection-start-line="37" selection-end-line="37" />
             </state>
           </provider>
@@ -32,8 +31,20 @@
       <file leaf-file-name="SearchTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/SearchTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
-              <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
+            <state relative-caret-position="255">
+              <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DriverWrapper.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Utils/DriverWrapper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -44,8 +55,20 @@
       <file leaf-file-name="SearchPage.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Pages/SearchPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="520">
-              <caret line="59" column="5" lean-forward="true" selection-start-line="59" selection-start-column="5" selection-end-line="59" selection-end-column="5" />
+            <state relative-caret-position="839">
+              <caret line="62" selection-start-line="62" selection-end-line="62" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Waiter.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Utils/Waiter.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="360">
+              <caret line="24" column="5" lean-forward="true" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -56,10 +79,12 @@
       <file leaf-file-name="BasePage.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Utils/BasePage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="698">
-              <caret line="60" lean-forward="true" selection-start-line="60" selection-end-line="60" />
+            <state relative-caret-position="325">
+              <caret line="44" column="28" selection-start-line="44" selection-start-column="28" selection-end-line="44" selection-end-column="28" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#1402#1403#0" expanded="true" />
+                <element signature="e#1437#1438#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -83,13 +108,13 @@
         <option value="$PROJECT_DIR$/src/test/java/SearchTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/Pages/BasePage.java" />
         <option value="$PROJECT_DIR$/src/main/java/Utils/Constants.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Utils/DriverWrapper.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Utils/Waiter.java" />
         <option value="$PROJECT_DIR$/src/main/java/Utils/Navigator.java" />
         <option value="$PROJECT_DIR$/src/main/java/Pages/HomePage.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/Utils/BasePage.java" />
         <option value="$PROJECT_DIR$/src/main/java/Pages/SearchPage.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Utils/Waiter.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Utils/BasePage.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Utils/DriverWrapper.java" />
       </list>
     </option>
   </component>
@@ -110,6 +135,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -175,9 +203,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -313,24 +338,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="SearchTest_searchTest - 2018.12.03 at 22h 10m 48s.xml">
-      <configuration name="SearchTest.searchTest" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="SearchTest_searchTest - 2018.12.03 at 22h 12m 04s.xml">
-      <configuration name="SearchTest.searchTest" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="SearchTest_searchTest - 2018.12.03 at 22h 12m 46s.xml">
-      <configuration name="SearchTest.searchTest" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="SearchTest_searchTest - 2018.12.03 at 22h 19m 25s.xml">
-      <configuration name="SearchTest.searchTest" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="SearchTest_searchTest - 2018.12.03 at 22h 20m 30s.xml">
-      <configuration name="SearchTest.searchTest" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="SearchTest_searchTest - 2018.12.03 at 22h 26m 18s.xml">
-      <configuration name="SearchTest.searchTest" configurationId="TestNG" />
-    </history-entry>
     <history-entry file="SearchTest_searchTest - 2018.12.03 at 22h 33m 09s.xml">
       <configuration name="SearchTest.searchTest" configurationId="TestNG" />
     </history-entry>
@@ -343,6 +350,24 @@
     <history-entry file="SearchTest_searchTest - 2018.12.03 at 22h 48m 08s.xml">
       <configuration name="SearchTest.searchTest" configurationId="TestNG" />
     </history-entry>
+    <history-entry file="SearchTest - 2018.12.04 at 20h 59m 47s.xml">
+      <configuration name="SearchTest" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="SearchTest_searchTest - 2018.12.05 at 21h 33m 51s.xml">
+      <configuration name="SearchTest.searchTest" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="SearchTest - 2018.12.05 at 21h 34m 54s.xml">
+      <configuration name="SearchTest" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="SearchTest - 2018.12.05 at 21h 35m 28s.xml">
+      <configuration name="SearchTest" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="SearchTest - 2018.12.05 at 21h 36m 12s.xml">
+      <configuration name="SearchTest" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="SearchTest - 2018.12.05 at 21h 36m 54s.xml">
+      <configuration name="SearchTest" configurationId="TestNG" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
@@ -350,30 +375,30 @@
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="7" />
+      <window_info anchor="bottom" id="Messages" order="0" weight="0.32905984" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info id="Image Layers" order="2" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" order="6" />
-      <window_info anchor="bottom" id="Run" order="3" weight="0.32905984" />
       <window_info anchor="bottom" id="Version Control" order="10" />
+      <window_info active="true" anchor="bottom" id="Run" order="3" visible="true" weight="0.32905984" />
       <window_info anchor="bottom" id="Terminal" order="8" />
       <window_info id="Capture Tool" order="6" />
       <window_info id="Designer" order="3" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26171243" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2657512" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="4" />
       <window_info anchor="right" id="Theme Preview" order="5" />
-      <window_info anchor="bottom" id="Debug" order="4" weight="0.3988604" />
       <window_info id="Favorites" order="5" side_tool="true" />
+      <window_info anchor="bottom" id="Debug" order="4" weight="0.3988604" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
       <window_info anchor="bottom" id="Find" order="2" />
-      <window_info anchor="bottom" id="Messages" order="0" weight="0.32905984" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -385,6 +410,45 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="555">
+          <caret line="37" selection-start-line="37" selection-end-line="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/SearchTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Utils/BasePage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="765">
+          <caret line="60" lean-forward="true" selection-start-line="60" selection-end-line="60" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1402#1403#0" expanded="true" />
+            <element signature="e#1437#1438#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Pages/SearchPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="870">
+          <caret line="62" lean-forward="true" selection-start-line="62" selection-end-line="62" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="525">
@@ -415,8 +479,8 @@
           <caret line="19" column="5" lean-forward="true" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#235#236#0" expanded="true" />
-            <element signature="e#277#278#0" expanded="true" />
+            <element signature="e#1402#1403#0" expanded="true" />
+            <element signature="e#1437#1438#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -502,26 +566,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Utils/DriverWrapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="4" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="4" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Utils/Waiter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="1" lean-forward="true" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Utils/Navigator.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
@@ -548,17 +592,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/Utils/BasePage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="555">
-          <caret line="37" selection-start-line="37" selection-end-line="37" />
+        <state relative-caret-position="325">
+          <caret line="44" column="28" selection-start-line="44" selection-start-column="28" selection-end-line="44" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1402#1403#0" expanded="true" />
+            <element signature="e#1437#1438#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Utils/BasePage.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/Utils/Waiter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="698">
-          <caret line="60" lean-forward="true" selection-start-line="60" selection-end-line="60" />
+        <state relative-caret-position="360">
+          <caret line="24" column="5" lean-forward="true" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -567,8 +616,25 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Pages/SearchPage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="520">
-          <caret line="59" column="5" lean-forward="true" selection-start-line="59" selection-start-column="5" selection-end-line="59" selection-end-column="5" />
+        <state relative-caret-position="839">
+          <caret line="62" selection-start-line="62" selection-end-line="62" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="259">
+          <caret line="37" selection-start-line="37" selection-end-line="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Utils/DriverWrapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -577,8 +643,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/SearchTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
+        <state relative-caret-position="255">
+          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
